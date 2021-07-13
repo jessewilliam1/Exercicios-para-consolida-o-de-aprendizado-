@@ -1,0 +1,81 @@
+//  Comandos para importação das bibliotecas 
+
+package calculator;
+import java.util.Scanner;
+
+// Estrutura básica do código java 
+
+public class Mainc {
+
+	public static void main(String[] args) {
+
+		// declaração de variaveis 		
+	
+		double n1;
+		double n2;
+		int op;
+		double addition,subtraction,multiplication,division;
+				
+		// Saída de dados, Leitura dos dados introduzidos pelo usuário 
+		
+		Scanner scan = new Scanner(System.in);
+
+				System.out.println("Enter de first value: ");
+				n1= scan.nextInt();
+				System.out.println("Enter the second value ");				
+				n2= scan.nextInt();
+				
+				System.out.println("Select the operation:");
+				
+				System.out.println(" 1 +  Addition");
+				System.out.println(" 2 - Subtraction");
+				System.out.println(" 3 x Multiplication");
+				System.out.println(" 4 / Division");
+				
+				System.out.println("Choose the option:");
+				
+				op= scan.nextInt();
+			
+				//Estruturas de repetições e condicionais  
+				
+				switch(op) {
+					case 1:
+						addition = n1+n2;
+						System.out.println("Result= "+ addition);
+						break;
+					case 2:
+						subtraction = n1-n2;
+						System.out.println("Result="+ subtraction);
+						break;
+					case 3:
+						multiplication = n1*n2;
+							System.out.println("Result"+ multiplication);
+						break;
+					case 4:
+						if(n1<n2) {
+							System.out.println("Sorry , Unable to perform the calculation ");
+						}
+						else {
+						division = n1/n2;
+							System.out.println("Result"+ division);
+							
+				}
+		
+						break;
+						
+						default:
+						
+						System.out.println("impossible to perform operation");
+						
+				}
+		}
+	
+
+}
+
+			
+	
+
+
+
+				
